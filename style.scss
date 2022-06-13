@@ -33,8 +33,10 @@
       background: #00d2ff;
     }
   }
-  .box {
+  .box__form {
     position: relative;
+    padding: 0;
+    margin: 0;
     .square {
       position: absolute;
       background: rgba(255, 255, 255, 0.1);
@@ -150,7 +152,7 @@
               margin-bottom: 20px;
               font-weight: 600px;
               &:hover {
-                background: rgba(255, 53, 155, 0.7);
+                background: #ff68b4;
                 color: #fff;
               }
             }
@@ -161,9 +163,9 @@
             color: #fff;
             cursor: pointer;
             &:hover {
-              color: #ff359b;
+              color: #ff68b4;
               a {
-                color: #ff359b;
+                color: #ff68b4;
               }
             }
             > a {
@@ -183,5 +185,66 @@
   }
   50% {
     transform: translateY(40px);
+  }
+}
+
+.container {
+  width: auto;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .container {
+    max-width: 710px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1247px) {
+  .container {
+    max-width: 1210px;
+  }
+}
+
+@media screen and(max-width: 530px) {
+  .container {
+    width: 330px !important;
+  }
+}
+
+@media screen and(max-width: 420px) {
+  .container {
+    width: 290px !important;
+  }
+}
+
+@media screen and(max-width: 350px) {
+  .container {
+    width: 264px !important;
   }
 }

@@ -47,11 +47,13 @@
   background: #00d2ff;
 }
 
-.login__form .box {
+.login__form .box__form {
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
-.login__form .box .square {
+.login__form .box__form .square {
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
@@ -68,14 +70,14 @@
           animation-delay: calc(-1s * var(--i));
 }
 
-.login__form .box .square:nth-child(1) {
+.login__form .box__form .square:nth-child(1) {
   top: -50px;
   right: -60px;
   width: 100px;
   height: 100px;
 }
 
-.login__form .box .square:nth-child(2) {
+.login__form .box__form .square:nth-child(2) {
   top: 150px;
   left: -100px;
   width: 120px;
@@ -83,7 +85,7 @@
   z-index: 2;
 }
 
-.login__form .box .square:nth-child(3) {
+.login__form .box__form .square:nth-child(3) {
   bottom: 50px;
   right: -60px;
   width: 80px;
@@ -91,21 +93,21 @@
   z-index: 2;
 }
 
-.login__form .box .square:nth-child(4) {
+.login__form .box__form .square:nth-child(4) {
   bottom: -80px;
   left: 100px;
   width: 50px;
   height: 50px;
 }
 
-.login__form .box .square:nth-child(5) {
+.login__form .box__form .square:nth-child(5) {
   top: -80px;
   left: 140px;
   width: 60px;
   height: 60px;
 }
 
-.login__form .box .--container__form-login {
+.login__form .box__form .--container__form-login {
   position: relative;
   width: 400px;
   min-height: 400px;
@@ -129,14 +131,14 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.login__form .box .--container__form-login .form {
+.login__form .box__form .--container__form-login .form {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 40px;
 }
 
-.login__form .box .--container__form-login .form h2 {
+.login__form .box__form .--container__form-login .form h2 {
   font-family: "Poppins", sans-serif;
   position: relative;
   color: #fff;
@@ -146,7 +148,7 @@
   margin-bottom: 40px;
 }
 
-.login__form .box .--container__form-login .form h2::after {
+.login__form .box__form .--container__form-login .form h2::after {
   position: absolute;
   content: "";
   left: 0;
@@ -156,12 +158,12 @@
   background: #fff;
 }
 
-.login__form .box .--container__form-login .form form .inputBox {
+.login__form .box__form .--container__form-login .form form .inputBox {
   width: 100%;
   margin-top: 20px;
 }
 
-.login__form .box .--container__form-login .form form .inputBox input {
+.login__form .box__form .--container__form-login .form form .inputBox input {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   width: 86.5%;
@@ -179,27 +181,27 @@
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.login__form .box .--container__form-login .form form .inputBox input::-webkit-input-placeholder {
+.login__form .box__form .--container__form-login .form form .inputBox input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.login__form .box .--container__form-login .form form .inputBox input:-ms-input-placeholder {
+.login__form .box__form .--container__form-login .form form .inputBox input:-ms-input-placeholder {
   color: #fff;
 }
 
-.login__form .box .--container__form-login .form form .inputBox input::-ms-input-placeholder {
+.login__form .box__form .--container__form-login .form form .inputBox input::-ms-input-placeholder {
   color: #fff;
 }
 
-.login__form .box .--container__form-login .form form .inputBox input::placeholder {
+.login__form .box__form .--container__form-login .form form .inputBox input::placeholder {
   color: #fff;
 }
 
-.login__form .box .--container__form-login .form form .inputBox input:focus {
+.login__form .box__form .--container__form-login .form form .inputBox input:focus {
   border: 1px solid #ff359b;
 }
 
-.login__form .box .--container__form-login .form form .inputBox .btn__submit-input {
+.login__form .box__form .--container__form-login .form form .inputBox .btn__submit-input {
   max-width: 100px;
   background: #fff;
   color: #666;
@@ -208,27 +210,27 @@
   font-weight: 600px;
 }
 
-.login__form .box .--container__form-login .form form .inputBox .btn__submit-input:hover {
-  background: rgba(255, 53, 155, 0.7);
+.login__form .box__form .--container__form-login .form form .inputBox .btn__submit-input:hover {
+  background: #ff68b4;
   color: #fff;
 }
 
-.login__form .box .--container__form-login .form form .forget {
+.login__form .box__form .--container__form-login .form form .forget {
   font-family: "Poppins", sans-serif;
   margin-top: 5px;
   color: #fff;
   cursor: pointer;
 }
 
-.login__form .box .--container__form-login .form form .forget:hover {
-  color: #ff359b;
+.login__form .box__form .--container__form-login .form form .forget:hover {
+  color: #ff68b4;
 }
 
-.login__form .box .--container__form-login .form form .forget:hover a {
-  color: #ff359b;
+.login__form .box__form .--container__form-login .form form .forget:hover a {
+  color: #ff68b4;
 }
 
-.login__form .box .--container__form-login .form form .forget > a {
+.login__form .box__form .--container__form-login .form form .forget > a {
   color: #fff;
   font-weight: 600;
 }
@@ -254,6 +256,68 @@
   50% {
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
+  }
+}
+
+.container {
+  width: auto;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .container {
+    max-width: 710px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1247px) {
+  .container {
+    max-width: 1210px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .container {
+    width: 330px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 290px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    width: 264px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
